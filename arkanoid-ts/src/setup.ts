@@ -1,15 +1,15 @@
-import RED_BRICK_IMAGE from './images/brick-red.png';
-import BLUE_BRICK_IMAGE from './images/brick-blue.png';
-import GREEN_BRICK_IMAGE from './images/brick-green.png';
-import YELLOW_BRICK_IMAGE from './images/brick-yellow.png';
-import PURPLE_BRICK_IMAGE from './images/brick-purple.png';
+import RED_BRICK_IMAGE from "./images/brick-red.png";
+import BLUE_BRICK_IMAGE from "./images/brick-blue.png";
+import GREEN_BRICK_IMAGE from "./images/brick-green.png";
+import YELLOW_BRICK_IMAGE from "./images/brick-yellow.png";
+import PURPLE_BRICK_IMAGE from "./images/brick-purple.png";
 
 // Grab the canvas element for calculating the brick width
 // depending on canvas width
-const canvas: HTMLCanvasElement | null = document.querySelector('#playField');
+const canvas: HTMLCanvasElement | null = document.querySelector("#playField");
 
 // Constants
-export const STAGE_PADDING = 10;
+export const STAGE_PADDING = 50;
 export const STAGE_ROWS = 20;
 export const STAGE_COLS = 10;
 export const BRICK_PADDING = 5;
@@ -33,7 +33,7 @@ export const BRICK_IMAGES: { [key: number]: string } = {
   2: GREEN_BRICK_IMAGE,
   3: YELLOW_BRICK_IMAGE,
   4: BLUE_BRICK_IMAGE,
-  5: PURPLE_BRICK_IMAGE
+  5: PURPLE_BRICK_IMAGE,
 };
 
 export const BRICK_ENERGY: { [key: number]: number } = {
@@ -41,7 +41,7 @@ export const BRICK_ENERGY: { [key: number]: number } = {
   2: 1, // Green brick
   3: 2, // Yellow brick
   4: 2, // Blue brick
-  5: 3 // Purple brick
+  5: 3, // Purple brick
 };
 
 // prettier-ignore

@@ -1,0 +1,9 @@
+.DS_Store
+.cache
+*/**/.node_modules
+**/.node_modules
+*/.node_modules
+**/*/.node_modules
+.node_modules
+.vscode
+arkanoid-ts/node_modules
